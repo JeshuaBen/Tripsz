@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator } from "react-native";
+import SignIn from "./src/screens/SignIn";
+
+import {
+  SofiaSans_400Regular,
+  SofiaSans_600SemiBold,
+  SofiaSans_700Bold,
+  useFonts,
+} from "@expo-google-fonts/sofia-sans";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  const [areFontsLoaded] = useFonts({
+    SofiaSans_400Regular,
+    SofiaSans_600SemiBold,
+    SofiaSans_700Bold,
+  });
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  return areFontsLoaded ? <SignIn /> : <ActivityIndicator />;
+}
