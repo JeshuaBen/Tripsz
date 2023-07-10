@@ -4,9 +4,11 @@ export default {
     mediumBlue: "#074782",
     weakBlue: "#0071BC",
 
-    darkGray: "#585858",
-    gray: "#717171",
-    lightGray: "#F8F8F8",
+    gray600: "#3C3C3B",
+    gray400: "#585858",
+    gray300: "#717171",
+    gray50: "#F8F8F8",
+    white: "#FFFFFF",
   },
 
   FONT_FAMILY: {
