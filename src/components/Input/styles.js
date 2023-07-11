@@ -24,6 +24,7 @@ export const InputWrapper = styled.View`
 export const TextInput = styled.TextInput.attrs(({ theme }) => ({
   borderBottomWidth: 1,
   borderBottomColor: theme.COLORS.gray50,
+  placeholderTextColor: theme.COLORS.gray300,
 }))`
   flex: 1;
   border-bottom-width: 1px;

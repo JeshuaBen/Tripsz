@@ -7,6 +7,8 @@ import {
   SofiaSans_700Bold,
   useFonts,
 } from "@expo-google-fonts/sofia-sans";
+import { Sora_600SemiBold } from "@expo-google-fonts/sora";
+
 import { ThemeProvider } from "styled-components/native";
 import theme from "./src/styles/theme";
 
@@ -15,6 +17,7 @@ export default function App() {
     SofiaSans_400Regular,
     SofiaSans_600SemiBold,
     SofiaSans_700Bold,
+    Sora_600SemiBold,
   });
 
   return areFontsLoaded ? (
